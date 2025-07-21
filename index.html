@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jopetru1 — Brutalist Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Brutalist overrides */
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Courier New', Courier, monospace;
+      color: #111;
+    }
+    a {
+      border-bottom: 2px solid black;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+    }
+    .brutalist-box {
+      border: 3px solid black;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body class="max-w-6xl mx-auto p-8">
+
+<header class="mb-12">
+  <h1 class="text-6xl font-bold tracking-tight mb-2">jopetru1</h1>
+  <nav class="flex gap-6 text-lg font-semibold uppercase">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="brutalist-box">
+    <h2 class="text-4xl font-bold mb-4 border-b-4 border-black inline-block">Welcome</h2>
+    <p class="text-xl leading-relaxed">
+      Hi, I’m <strong>jopetru1</strong>, a graphic designer crafting bold, brutalist & editorial visuals.<br />
+      I specialize in mixed media — branding, posters, UI, and more.<br />
+      Scroll down to see my work.
+    </p>
+  </section>
+
+  <section class="brutalist-box">
+    <h2 class="text-4xl font-bold mb-6 border-b-4 border-black inline-block">Featured Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <!-- Replace images with your own -->
+      <a href="projects.html#project1" class="block border-4 border-black p-4 hover:bg-black hover:text-white transition">
+        <img src="https://via.placeholder.com/400x250?text=Poster+1" alt="Poster 1" class="mb-2" />
+        <h3 class="text-xl font-bold">Brutalist Poster Series</h3>
+      </a>
+      <a href="projects.html#project2" class="block border-4 border-black p-4 hover:bg-black hover:text-white transition">
+        <img src="https://via.placeholder.com/400x250?text=Branding+Work" alt="Branding Work" class="mb-2" />
+        <h3 class="text-xl font-bold">Editorial Branding</h3>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="mt-20 border-t-4 border-black pt-6 text-sm uppercase flex justify-between">
+  <div>© 2025 jopetru1</div>
+  <div>Made with Tailwind & Brutalism</div>
+</footer>
+
+</body>
+</html>
