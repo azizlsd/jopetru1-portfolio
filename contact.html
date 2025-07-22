@@ -1,60 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — jopetru1</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jopetru1 – Portfolio</title>
+  <link rel="stylesheet" href="styles/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #f5f5f5;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Space Grotesk', monospace;
+      background-color: #fefefe;
       color: #111;
     }
-    a {
-      border-bottom: 2px solid black;
-      transition: background-color 0.3s;
-    }
-    a:hover {
-      background-color: black;
-      color: white;
-      text-decoration: none;
-    }
-    .brutalist-box {
-      border: 3px solid black;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
+    .hover-zoom:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s;
     }
   </style>
 </head>
-<body class="max-w-6xl mx-auto p-8">
+<body class="p-8">
+  <header class="flex justify-between items-center mb-12">
+    <h1 class="text-4xl font-bold">jopetru1</h1>
+    <div class="space-x-4">
+      <a href="mailto:your@email.com" class="underline">Email</a>
+      <a href="https://instagram.com/yourhandle" class="underline">Instagram</a>
+      <a href="https://behance.net/yourhandle" class="underline">Behance</a>
+    </div>
+  </header>
 
-<header class="mb-12">
-  <h1 class="text-6xl font-bold tracking-tight mb-2">jopetru1</h1>
-  <nav class="flex gap-6 text-lg font-semibold uppercase">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section class="brutalist-box max-w-lg mx-auto">
-    <h2 class="text-4xl font-bold mb-6 border-b-4 border-black inline-block">Get in Touch</h2>
-    <p class="mb-6 text-lg">Reach me via email or social media:</p>
-    <ul class="list-disc list-inside text-lg space-y-3">
-      <li>Email: <a href="mailto:jopetru1@example.com" class="underline">jopetru1@example.com</a></li>
-      <li>Instagram: <a href="https://instagram.com/jopetru1" target="_blank" rel="noopener noreferrer" class="underline">@jopetru1</a></li>
-      <li>Behance: <a href="https://behance.net/jopetru1" target="_blank" rel="noopener noreferrer" class="underline">behance.net/jopetru1</a></li>
-    </ul>
+  <section class="mb-20">
+    <h2 class="text-2xl font-semibold mb-2">Let's build something new.</h2>
+    <p class="max-w-xl text-lg">I’m a graphic designer exploring the space between brutalism, editorial layout, and digital storytelling. View my projects below.</p>
   </section>
-</main>
 
-<footer class="mt-20 border-t-4 border-black pt-6 text-sm uppercase flex justify-between">
-  <div>© 2025 jopetru1</div>
-  <div>Made with Tailwind & Brutalism</div>
-</footer>
+  <section class="grid md:grid-cols-3 gap-8">
+    <div class="hover-zoom border p-4">
+      <img src="assets/posters/poster1.jpg" alt="Poster 1" class="mb-2">
+      <h3 class="font-semibold">Brutalist Series</h3>
+      <p class="text-sm">Poster design for underground events in a raw aesthetic.</p>
+    </div>
+    <div class="hover-zoom border p-4">
+      <img src="assets/ui/ui1.jpg" alt="UI Mockup" class="mb-2">
+      <h3 class="font-semibold">Retail UX</h3>
+      <p class="text-sm">Digital interface design for a modern online store.</p>
+    </div>
+    <div class="hover-zoom border p-4">
+      <img src="assets/branding/logo1.png" alt="Brand Logo" class="mb-2">
+      <h3 class="font-semibold">Logo & Identity</h3>
+      <p class="text-sm">Branding and logo design for independent labels.</p>
+    </div>
+  </section>
 
+  <footer class="mt-24 text-center text-sm text-gray-500">
+    &copy; 2025 jopetru1 — Built with ❤️ on Vercel
+  </footer>
 </body>
 </html>
